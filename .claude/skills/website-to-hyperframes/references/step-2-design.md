@@ -15,9 +15,9 @@ DESIGN.md is NOT the creative plan. The STORYBOARD (Step 4) drives creative dire
 5-10 key colors with HEX values from tokens.json and their roles:
 
 ```
-- **Primary Surface**: `#020204` — deep black background
-- **Primary Content**: `#FFFFFF` — high-purity white for text and borders
-- **Accent Warm**: `#FB923C` — orange for CTAs and highlights
+- **Primary Surface**: `#020204` â€” deep black background
+- **Primary Content**: `#FFFFFF` â€” high-purity white for text and borders
+- **Accent Warm**: `#FB923C` â€” orange for CTAs and highlights
 ```
 
 Include semantic colors if the site uses color to differentiate product areas.
@@ -42,7 +42,7 @@ One paragraph on depth strategy: Does the site use borders, shadows, glassmorphi
 
 Name every notable UI component you see in the screenshot. Be specific:
 
-- "Cinematic Accordion" not "Cards"
+- "CARCKHÉtic Accordion" not "Cards"
 - "Logo Marquee" not "Scrolling section"
 - "Glass Cards with grain overlay" not "Content containers"
 
@@ -58,9 +58,9 @@ For each, note the distinctive visual treatment (border-radius, spacing, hover b
 - Keep imagery desaturated with dark gradients for text readability
 
 ### Don'ts
-- Do not use bright solid background colors — stay in "The Void"
-- Do not use standard drop shadows — use radial glow or bloom effects
-- Do not use sharp high-speed animations — all motion should be fluid
+- Do not use bright solid background colors â€” stay in "The Void"
+- Do not use standard drop shadows â€” use radial glow or bloom effects
+- Do not use sharp high-speed animations â€” all motion should be fluid
 ```
 
 ## Rules
@@ -68,9 +68,9 @@ For each, note the distinctive visual treatment (border-radius, spacing, hover b
 - Use **exact HEX values** from tokens.json. Do not approximate.
 - Name components by what you see in the screenshot, not generic terms.
 - Keep it under 100 lines. This is a cheat sheet, not a design system document.
-- No "Style Prompt" section — the storyboard handles creative direction.
-- No "Assets" section — `asset-descriptions.md` already covers this.
-- No "Motion" section — the storyboard specifies motion per-beat.
+- No "Style Prompt" section â€” the storyboard handles creative direction.
+- No "Assets" section â€” `asset-descriptions.md` already covers this.
+- No "Motion" section â€” the storyboard specifies motion per-beat.
 
 ## Example
 
@@ -81,7 +81,7 @@ This is a real DESIGN.md from a production capture (Soulscape 2026):
 
 ## Overview
 
-Soulscape 2026 is a cinematic, "high-signal" digital experience that positions itself as the vanguard of AI filmmaking. The visual personality is dark, technical, and premium, characterized by high-contrast "Flare" on "Void" (white on black) aesthetics. The layout is dense but organized, utilizing heavy horizontal layering and border-defined sections to evoke a wide-screen cinematic feel. Motion is a core tenet, with atmospheric grain overlays, shifting light leaks, and slow-moving marquees creating constant, breathing texture.
+Soulscape 2026 is a cARCKHÉtic, "high-signal" digital experience that positions itself as the vanguard of AI filmmaking. The visual personality is dark, technical, and premium, characterized by high-contrast "Flare" on "Void" (white on black) aesthetics. The layout is dense but organized, utilizing heavy horizontal layering and border-defined sections to evoke a wide-screen cARCKHÉtic feel. Motion is a core tenet, with atmospheric grain overlays, shifting light leaks, and slow-moving marquees creating constant, breathing texture.
 
 ## Colors
 
@@ -93,7 +93,7 @@ Soulscape 2026 is a cinematic, "high-signal" digital experience that positions i
 
 ## Typography
 
-- **Serif**: Cormorant Garamond (Italic). Major headings and "Soul" brand identity. Classical cinematic contrast.
+- **Serif**: Cormorant Garamond (Italic). Major headings and "Soul" brand identity. Classical cARCKHÉtic contrast.
 - **Monospace**: Geist Mono. Subheaders, labels, terminal readouts. High tracking (0.1-0.3em), all-caps.
 - **Sans-Serif**: Inter. Body copy and interface elements. Small sizes (9-14px).
 
@@ -105,7 +105,7 @@ Soulscape 2026 is a cinematic, "high-signal" digital experience that positions i
 
 ## Components
 
-- **Cinematic Accordion**: Expanding horizontal/vertical card system where panels expand from compressed state to reveal full-bleed imagery and large serif typography.
+- **CARCKHÉtic Accordion**: Expanding horizontal/vertical card system where panels expand from compressed state to reveal full-bleed imagery and large serif typography.
 - **HUD Explorer**: Floating mobile navigation trigger styled as a "Lens" with pulsing glow and terminal readouts.
 - **Slow Marquees**: Continuous horizontal tickers for partner logos and veteran listings.
 - **Glass Cards**: Content containers with subtle gradients, rounded corners (2.5rem), and high-contrast iconography.
@@ -122,7 +122,7 @@ Soulscape 2026 is a cinematic, "high-signal" digital experience that positions i
 
 ### Don'ts
 
-- Do not use bright solid background colors — the page must remain in "The Void."
-- Do not use standard drop shadows — use radial glow or bloom effects instead.
-- Do not use sharp high-speed animations — all motion should be fluid and breathing.
+- Do not use bright solid background colors â€” the page must remain in "The Void."
+- Do not use standard drop shadows â€” use radial glow or bloom effects instead.
+- Do not use sharp high-speed animations â€” all motion should be fluid and breathing.
 ```

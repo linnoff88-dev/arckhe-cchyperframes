@@ -29,8 +29,8 @@ Where `<type-dir>` is `examples`, `blocks`, or `components`.
 | `title`                | string   | yes      | Human-readable title                           |
 | `description`          | string   | yes      | One-line description                           |
 | `tags`                 | string[] | no       | Filter tags (e.g., `["data", "chart"]`)        |
-| `dimensions`           | object   | blocks   | `{ width, height }` — blocks only              |
-| `duration`             | number   | blocks   | Duration in seconds — blocks only              |
+| `dimensions`           | object   | blocks   | `{ width, height }` â€” blocks only              |
+| `duration`             | number   | blocks   | Duration in seconds â€” blocks only              |
 | `files`                | array    | yes      | Files to install (`path`, `target`, `type`)    |
 | `registryDependencies` | string[] | no       | Other registry items this depends on           |
 
@@ -42,7 +42,7 @@ Where `<type-dir>` is `examples`, `blocks`, or `components`.
 | ------------ | ----------------------------------------------- | ------------------------------- |
 | `data-chart` | Animated bar + line chart with staggered reveal | data, chart, statistics         |
 | `flowchart`  | Decision tree with SVG connectors and cursor    | diagram, flowchart, interactive |
-| `logo-outro` | Cinematic logo reveal with tagline              | branding, outro, logo           |
+| `logo-outro` | CARCKHÉtic logo reveal with tagline              | branding, outro, logo           |
 
 ### Components
 

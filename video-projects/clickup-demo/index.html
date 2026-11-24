@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>ClickUp — 60s Demo v4</title>
+    <title>ClickUp â€” 60s Demo v4</title>
   </head>
   <body>
     <div
@@ -24,7 +24,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 1 — HOOK + PROBLEM  (0 → 8) -->
+      <!-- SCENE 1 â€” HOOK + PROBLEM  (0 â†’ 8) -->
       <!-- ============================================================ -->
       <div class="scene" id="scene-1">
         <div class="scene-cam" id="scene-1-cam">
@@ -47,7 +47,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 2 — LOGO REVEAL  (8 → 12) -->
+      <!-- SCENE 2 â€” LOGO REVEAL  (8 â†’ 12) -->
       <!-- ============================================================ -->
       <div class="scene" id="scene-2">
         <div class="scene-cam" id="scene-2-cam">
@@ -62,11 +62,11 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 3 — FEATURE: VIEWS  (10 → 24) — delivers "every view" by -->
+      <!-- SCENE 3 â€” FEATURE: VIEWS  (10 â†’ 24) â€” delivers "every view" by -->
       <!-- sequencing board -> list stills with 3D-tilt entrances and     -->
       <!-- Ken-Burns holds. Was a live recording with wandering cursor +  -->
       <!-- three zoom regions that landed on nothing; v5 commits to one   -->
-      <!-- cinematic frame per view so the caption's promise matches the  -->
+      <!-- cARCKHÉtic frame per view so the caption's promise matches the  -->
       <!-- asset.                                                          -->
       <!-- ============================================================ -->
       <div class="scene" id="scene-3">
@@ -81,7 +81,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 4 — FEATURE: TASK DETAIL  (23.5 → 34.9)                 -->
+      <!-- SCENE 4 â€” FEATURE: TASK DETAIL  (23.5 â†’ 34.9)                 -->
       <!-- Still 06-task-detail-scrolled.png replaces task.mp4 so the    -->
       <!-- callouts point at a panel that doesn't move under them. 3D-   -->
       <!-- tilt entrance, flat hold with Subtasks callout, then ONE      -->
@@ -104,7 +104,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 5 — FEATURE: BRAIN / AI  (34.85 → 46.9) — real Brain response -->
+      <!-- SCENE 5 â€” FEATURE: BRAIN / AI  (34.85 â†’ 46.9) â€” real Brain response -->
       <!-- ============================================================ -->
       <div class="scene" id="scene-5">
         <div class="scene-cam" id="scene-5-cam">
@@ -119,7 +119,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- SCENE 6 — OUTCOME + CTA  (50 → 60) -->
+      <!-- SCENE 6 â€” OUTCOME + CTA  (50 â†’ 60) -->
       <!-- ============================================================ -->
       <div class="scene" id="scene-6">
         <div class="scene-cam" id="scene-6-cam">
@@ -139,7 +139,7 @@
               <div class="cta-button">
                 <div class="cta-gradient-sweep"></div>
                 <span>Try it free</span>
-                <span class="cta-arrow">→</span>
+                <span class="cta-arrow">â†’</span>
               </div>
             </div>
             <div class="cta-sub">clickup.com</div>
@@ -148,7 +148,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- CAPTION BAND — top of frame, one group visible at a time      -->
+      <!-- CAPTION BAND â€” top of frame, one group visible at a time      -->
       <!-- ============================================================ -->
       <div class="caption-band" id="captions">
         <div class="caption-scrim" id="cap-scrim"></div>
@@ -164,7 +164,7 @@
       </div>
 
       <!-- ============================================================ -->
-      <!-- FLASH BRIDGE — full-frame white for scene transitions         -->
+      <!-- FLASH BRIDGE â€” full-frame white for scene transitions         -->
       <!-- ============================================================ -->
       <div class="flash-bridge" id="flash-bridge"></div>
 
@@ -173,7 +173,7 @@
       <!-- ============================================================ -->
       <div class="timecode" id="timecode">
         <span class="tc-label">CLICKUP // PRODUCT DEMO</span>
-        <span class="tc-sep">·</span>
+        <span class="tc-sep">Â·</span>
         <span class="tc-val" id="tc-val">00:00</span>
       </div>
 
@@ -223,7 +223,7 @@
         /* The logo-lockup fills the stage; shot-frame uses explicit pixel box (below). */
         .logo-lockup { inset: 0; }
 
-        /* ================= SCENE 1 — TOOL CLOUD ================= */
+        /* ================= SCENE 1 â€” TOOL CLOUD ================= */
         .tool-cloud { position: absolute; inset: 0; }
         .tool {
           position: absolute;
@@ -255,7 +255,7 @@
           opacity: 0; filter: blur(4px);
         }
 
-        /* ================= SCENE 2 — LOGO LOCKUP ================= */
+        /* ================= SCENE 2 â€” LOGO LOCKUP ================= */
         .logo-lockup {
           display: flex; align-items: center; justify-content: center;
           gap: 48px;
@@ -309,7 +309,7 @@
           object-fit: cover; object-position: center top;
         }
 
-        /* Full-bleed video frame for scenes 3/4/5 — fills the entire 1920x1080
+        /* Full-bleed video frame for scenes 3/4/5 â€” fills the entire 1920x1080
            canvas so real ClickUp UI is the hero. Wrapper is animated for
            smart-zoom (scale + transformOrigin); video element itself is never
            directly animated to avoid frame freezes. */
@@ -331,7 +331,7 @@
           background: #0C0E14;
         }
         /* v5: scene-3/4 cams get perspective so `.tilt-frame` can rotate in
-           3D for a cinematic entrance instead of the old frenetic multi-zoom
+           3D for a cARCKHÉtic entrance instead of the old frenetic multi-zoom
            pattern. Scene 5 intentionally stays flat so the Brain text reads. */
         #scene-3-cam, #scene-4-cam {
           perspective: 2600px;
@@ -389,7 +389,7 @@
           z-index: 7;
         }
 
-        /* ================= SCENE 4 — CALLOUTS ================= */
+        /* ================= SCENE 4 â€” CALLOUTS ================= */
         .callout {
           position: absolute;
           font-family: "JetBrains Mono", monospace;
@@ -411,17 +411,17 @@
           background: #7B68EE;
           box-shadow: 0 0 14px #7B68EE;
         }
-        /* Callouts in scene 4 are positioned in 1920×1080 canvas coords (the
+        /* Callouts in scene 4 are positioned in 1920Ã—1080 canvas coords (the
            video is full-bleed). Tracked from task.mp4 frames:
-           - Priority "Urgent" pill: ~(420, 250) — left-side fields column, row labelled "Priority"
-           - Subtasks section header: ~(170, 530) — left column, lower half
-           - Activity panel + comment "Locked in for Q2 — let's ship.": ~(1320, 870) — right column bottom */
+           - Priority "Urgent" pill: ~(420, 250) â€” left-side fields column, row labelled "Priority"
+           - Subtasks section header: ~(170, 530) â€” left column, lower half
+           - Activity panel + comment "Locked in for Q2 â€” let's ship.": ~(1320, 870) â€” right column bottom */
         .callout-priority { top: 218px; left: 380px; }
         .callout-subtasks { top: 500px; left: 130px; }
         .callout-activity { top: 840px; left: 1180px; }
 
-        /* ================= SCENE 5 — BRAIN ================= */
-        /* Atmospheric halo behind Brain content during the "thinking → answer"
+        /* ================= SCENE 5 â€” BRAIN ================= */
+        /* Atmospheric halo behind Brain content during the "thinking â†’ answer"
            moment. Pure decoration; the real typed prompt + response are in the
            recording itself. */
         .brain-halo {
@@ -442,7 +442,7 @@
           pointer-events: none;
         }
 
-        /* ================= SCENE 6 — OUTCOME + CTA ================= */
+        /* ================= SCENE 6 â€” OUTCOME + CTA ================= */
         .outcome-wrap {
           position: absolute;
           top: 230px; left: 0; right: 0;
@@ -550,7 +550,7 @@
             drop-shadow(0 3px 6px rgba(0, 0, 0, 0.55))
             drop-shadow(0 0 20px rgba(12, 14, 20, 0.5));
         }
-        /* Gradient accent — kept deliberately simple. Earlier v4 attempt
+        /* Gradient accent â€” kept deliberately simple. Earlier v4 attempt
            layered drop-shadow filters on transparent (background-clip:text)
            which produced visible chromatic separation. The scrim handles
            legibility; the gradient just does color. */
@@ -591,7 +591,7 @@
 
         /* ================= FLASH BRIDGE ================= */
         /* Full-frame white wipe triggered between scenes for punchy cuts.
-           Default invisible; timeline animates opacity 0 → 1 → 0. */
+           Default invisible; timeline animates opacity 0 â†’ 1 â†’ 0. */
         .flash-bridge {
           position: absolute;
           inset: 0;
@@ -611,13 +611,13 @@
           transform-origin: 50% 50%;
         }
 
-        /* ================= SCENE 1 — DEPTH LAYERS ================= */
+        /* ================= SCENE 1 â€” DEPTH LAYERS ================= */
         /* Near/mid/far depth for parallax drift in tool cloud. */
         .tool.depth-near { opacity: 1.0; }
         .tool.depth-mid  { opacity: 0.85; }
         .tool.depth-far  { opacity: 0.65; font-size: 24px; }
 
-        /* ================= SCENE 6 — CLOSE CAPTION ================= */
+        /* ================= SCENE 6 â€” CLOSE CAPTION ================= */
         .close-caption {
           position: absolute;
           top: 580px; left: 0; right: 0;
@@ -629,7 +629,7 @@
           opacity: 0;
         }
 
-        /* ================= SCENE 6 — CTA GRADIENT SWEEP ================= */
+        /* ================= SCENE 6 â€” CTA GRADIENT SWEEP ================= */
         /* The button needs overflow: hidden + position: relative to contain
            the sweep overlay. Specificity is equal so these merge with the
            earlier .cta-button declaration. */
@@ -693,7 +693,7 @@
 
           /* ==================== SCENE VISIBILITY ==================== */
           // Kept explicit rather than a fade loop so each scene's in/out fits its
-          // specific transition (flash wipe, horizontal push, cinematic zoom).
+          // specific transition (flash wipe, horizontal push, cARCKHÉtic zoom).
           var sceneSchedule = [
             { id: "#scene-1", in: 0.0,  fadeDur: 0.4, out: 5.98, outDur: 0.08 },
             { id: "#scene-2", in: 5.95, fadeDur: 0.1, out: 10.0, outDur: 0.3  },
@@ -710,13 +710,13 @@
           });
 
           /* ========================================================== */
-          /* ================ SCENE 1 (0 → 6) — HOOK ================= */
+          /* ================ SCENE 1 (0 â†’ 6) â€” HOOK ================= */
           /* ========================================================== */
-          // Camera arrives: scale 1.15 → 1.0. Viewer feels a settle, not a cut-in.
+          // Camera arrives: scale 1.15 â†’ 1.0. Viewer feels a settle, not a cut-in.
           tl.set("#scene-1-cam", { scale: 1.15, transformOrigin: "50% 50%" }, 0);
           tl.to("#scene-1-cam", { scale: 1.0, duration: 0.9, ease: "power3.out" }, 0.0);
 
-          // Tools stagger in — near/mid/far depth classes control size+opacity.
+          // Tools stagger in â€” near/mid/far depth classes control size+opacity.
           tl.from(".tool", {
             opacity: 0, scale: 0.75, y: 34,
             duration: 0.45,
@@ -724,12 +724,12 @@
             ease: "power3.out",
           }, 0.25);
 
-          // Parallax drift — larger amplitude than v2. Near layer moves most.
+          // Parallax drift â€” larger amplitude than v2. Near layer moves most.
           tl.to(".tool.depth-near", { x: 42, y: -18, duration: 4.2, ease: "sine.inOut" }, 0.9);
           tl.to(".tool.depth-mid",  { x: -30, y: 10, duration: 4.2, ease: "sine.inOut" }, 0.9);
           tl.to(".tool.depth-far",  { x: 18, y: 14,  duration: 4.2, ease: "sine.inOut" }, 0.9);
 
-          // Caption 1 "12+ tools" — hero word pops.
+          // Caption 1 "12+ tools" â€” hero word pops.
           tl.fromTo("#cap-1-hot",
             { scale: 1.0 },
             { scale: 1.18, duration: 0.22, ease: "back.out(2)" }, 1.2);
@@ -752,7 +752,7 @@
           flashAt(5.88, 0.08, 0.32);
 
           /* ========================================================== */
-          /* ================ SCENE 2 (6 → 10) — LOGO ================ */
+          /* ================ SCENE 2 (6 â†’ 10) â€” LOGO ================ */
           /* ========================================================== */
           tl.set("#scene-2-cam", { scale: 1.0, transformOrigin: "50% 50%" }, 5.9);
 
@@ -771,19 +771,19 @@
           // Orb fades away as the logo takes over.
           tl.to(".collapse-orb", { opacity: 0, scale: 3, duration: 0.5, ease: "power2.out" }, 6.1);
 
-          // Camera push-in during the hold — 8% zoom instead of v2's 4%.
+          // Camera push-in during the hold â€” 8% zoom instead of v2's 4%.
           tl.to("#scene-2-cam", { scale: 1.08, duration: 3.4, ease: "sine.inOut" }, 6.3);
 
-          // Cinematic-zoom exit: the camera dives into ClickUp, landing inside the product.
+          // CARCKHÉtic-zoom exit: the camera dives into ClickUp, landing inside the product.
           tl.to("#scene-2-cam", { scale: 1.28, duration: 0.35, ease: "power2.in" }, 9.65);
 
           /* ========================================================== */
-          /* ================ SCENE 3 (9.9 → 24) — VIEWS ============== */
+          /* ================ SCENE 3 (9.9 â†’ 24) â€” VIEWS ============== */
           /* v5 rework: delivers "One workspace. Every view." by        */
           /* actually showing TWO views (board then list). Each still   */
           /* gets a 3D-tilt entrance, then sits flat with a slow Ken-   */
           /* Burns push. No fake cursor, no click pulses, no multi-     */
-          /* zoom choreography — the caption and the asset finally      */
+          /* zoom choreography â€” the caption and the asset finally      */
           /* agree with each other.                                     */
           /* ========================================================== */
           tl.set("#scene-3-cam", { scale: 1.0, x: 0, transformOrigin: "50% 50%" }, 9.9);
@@ -792,8 +792,8 @@
           // would stack on top of 3a for the entire board-view window.
           tl.set("#scene-3b-frame", { opacity: 0 }, 9.9);
 
-          // --- 3a: BOARD VIEW (9.9 → 15.0) ---
-          // Cinematic 3D tilt-in, then settle and slowly breathe.
+          // --- 3a: BOARD VIEW (9.9 â†’ 15.0) ---
+          // CARCKHÉtic 3D tilt-in, then settle and slowly breathe.
           tl.set("#scene-3a-frame", {
             opacity: 1, scale: 0.94,
             rotationY: -18, rotationX: 6, y: 30,
@@ -806,12 +806,12 @@
           // Slow Ken-Burns push across the flat hold (~3s).
           tl.to("#scene-3a-frame", { scale: 1.035, duration: 3.0, ease: "sine.inOut" }, 11.3);
 
-          // 3a → 3b transition: subtle push-slide suggesting a view switch.
+          // 3a â†’ 3b transition: subtle push-slide suggesting a view switch.
           tl.to("#scene-3a-frame", {
             opacity: 0, x: -70, duration: 0.5, ease: "power2.in",
           }, 14.7);
 
-          // --- 3b: LIST VIEW (15.0 → 23.6) ---
+          // --- 3b: LIST VIEW (15.0 â†’ 23.6) ---
           // Tilt in from the opposite side so it feels like we just switched
           // tabs in ClickUp's view picker.
           tl.set("#scene-3b-frame", {
@@ -825,15 +825,15 @@
             duration: 1.1, ease: "power3.out",
           }, 15.0);
           // Long slow Ken-Burns while caption "Switch without losing context."
-          // plays over a stable list view. No targeted zoom — the asset's own
+          // plays over a stable list view. No targeted zoom â€” the asset's own
           // rows are the content; our camera doesn't compete with it.
           tl.to("#scene-3b-frame", { scale: 1.05, duration: 7.0, ease: "sine.inOut" }, 16.2);
 
-          // Exit horizontal push — whole scene-cam slides left. Scene 4 slides in from right.
+          // Exit horizontal push â€” whole scene-cam slides left. Scene 4 slides in from right.
           tl.to("#scene-3-cam", { x: -1920, duration: 0.4, ease: "power3.in" }, 23.6);
 
           /* ========================================================== */
-          /* ============ SCENE 4 (23.5 → 34.9) — TASK DETAIL ========= */
+          /* ============ SCENE 4 (23.5 â†’ 34.9) â€” TASK DETAIL ========= */
           /* v5 rework: still (06-task-detail-scrolled.png) replaces    */
           /* task.mp4 so callouts + zoom land where we claim. One 3D    */
           /* tilt entrance, flat hold with SUBTASKS callout, then ONE   */
@@ -874,42 +874,42 @@
             { opacity: 0, scale: 0.5, y: -20 },
             { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(2)" },
             30.4);
-          // Hold the zoom — no pull-back. The scene fades out at 34.9 under
+          // Hold the zoom â€” no pull-back. The scene fades out at 34.9 under
           // the scene schedule, taking the callout with it.
 
           // Flash-white into scene 5.
           flashAt(34.55, 0.08, 0.3);
 
           /* ========================================================== */
-          /* ============= SCENE 5 (34.85 → 46.9) — BRAIN / AI ======== */
+          /* ============= SCENE 5 (34.85 â†’ 46.9) â€” BRAIN / AI ======== */
           /* v5 rework: the Brain recording's own streaming text IS the */
           /* motion. Our camera stays nearly still so the viewer can    */
           /* actually read the answer. One calm halo fade, one slow     */
-          /* linear Ken-Burns push from 1.00 → 1.04 across 9 seconds.   */
+          /* linear Ken-Burns push from 1.00 â†’ 1.04 across 9 seconds.   */
           /* Gone: two discrete smart-zooms, lateral pan, pull-back,    */
           /* halo pulses, fake cursor drift.                             */
           /* ========================================================== */
           tl.set("#scene-5-cam",   { scale: 1.0, transformOrigin: "50% 50%" }, 34.8);
           tl.set("#scene-5-frame", { scale: 1.08, x: 0, y: 0, transformOrigin: "50% 50%" }, 34.8);
 
-          // Calm halo — fade in, hold, fade out. No pulses competing with text.
+          // Calm halo â€” fade in, hold, fade out. No pulses competing with text.
           tl.set(".brain-halo", { opacity: 0, scale: 1.0 }, 34.8);
           tl.to(".brain-halo",  { opacity: 0.55, duration: 1.2, ease: "power2.out" }, 35.2);
 
-          // Gentle entrance settle (1.08 → 1.00).
+          // Gentle entrance settle (1.08 â†’ 1.00).
           tl.to("#scene-5-frame", { scale: 1.0, duration: 1.2, ease: "power3.out" }, 35.0);
 
           // Slow linear Ken-Burns push across the reading window.
           tl.to("#scene-5-frame", { scale: 1.04, duration: 9.0, ease: "none" }, 36.0);
 
-          // Halo fades before the cinematic zoom exit.
+          // Halo fades before the cARCKHÉtic zoom exit.
           tl.to(".brain-halo", { opacity: 0, duration: 0.7, ease: "power2.in" }, 45.2);
 
-          // Cinematic zoom exit into scene 6.
+          // CARCKHÉtic zoom exit into scene 6.
           tl.to("#scene-5-cam", { scale: 1.4, duration: 0.7, ease: "power2.in" }, 46.1);
 
           /* ========================================================== */
-          /* =============== SCENE 6 (47 → 60) — CTA ================= */
+          /* =============== SCENE 6 (47 â†’ 60) â€” CTA ================= */
           /* ========================================================== */
           // Entry: zoom-in from scale 0.75. Continues the dive-in from scene 5.
           tl.set("#scene-6-cam", { scale: 0.75, transformOrigin: "50% 50%" }, 46.7);
@@ -921,28 +921,28 @@
           tl.to("#outcome-2", { scale: 1.08, duration: 0.22, ease: "power2.out" }, 48.2);
           tl.to("#outcome-2", { scale: 1.0,  duration: 0.35, ease: "power2.inOut" }, 48.42);
 
-          // Outcome text Ken-Burns — never sits static.
+          // Outcome text Ken-Burns â€” never sits static.
           tl.to(".outcome-wrap", { scale: 1.06, duration: 3.2, ease: "sine.inOut", transformOrigin: "50% 50%" }, 48.8);
 
-          // CTA stagger — mark rotates in from -15deg, wordmark slams, button springs.
+          // CTA stagger â€” mark rotates in from -15deg, wordmark slams, button springs.
           tl.from(".cta-mark", { x: -60, scale: 0.6, opacity: 0, rotation: -15, duration: 0.6, ease: "back.out(1.5)" }, 49.5);
           tl.from(".cta-wordmark", { x: 60, opacity: 0, duration: 0.5, ease: "expo.out" }, 49.8);
           tl.from(".cta-button", { y: 40, scale: 0.8, opacity: 0, duration: 0.55, ease: "back.out(1.6)" }, 50.5);
           tl.from(".cta-sub",    { y: 14, opacity: 0, duration: 0.4, ease: "power2.out" }, 51.0);
 
-          // Close caption — small JetBrains Mono tagline.
+          // Close caption â€” small JetBrains Mono tagline.
           tl.fromTo("#close-caption",
             { y: 16, opacity: 0 },
             { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
             53.0);
 
-          // Gradient sweep across button — twice.
+          // Gradient sweep across button â€” twice.
           tl.set(".cta-gradient-sweep", { left: "-100%" }, 51.19);
           tl.to(".cta-gradient-sweep",  { left: "200%",  duration: 1.2, ease: "power2.inOut" }, 51.2);
           tl.set(".cta-gradient-sweep", { left: "-100%" }, 55.49);
           tl.to(".cta-gradient-sweep",  { left: "200%",  duration: 1.2, ease: "power2.inOut" }, 55.5);
 
-          // Button pulse — never static.
+          // Button pulse â€” never static.
           tl.to(".cta-button", { scale: 1.04, duration: 1.0, ease: "sine.inOut", yoyo: true, repeat: 3 }, 52.5);
 
           // Logo mark rotates subtly through the hold.
