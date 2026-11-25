@@ -7,7 +7,7 @@ Used by `/make-a-video` Gate 5. Generates `<project-folder>/STORYBOARD.md` â€
 ```markdown
 # STORYBOARD â€” <project-slug>
 
-**Total duration:** <duration>s Â· <fps>fps Â· <width>Ã—<height>
+**Total duration:** <duration>s Â· <fps>fps Â· <width>ê—<height>
 **Style profile:** see `assets/style-profile.md`
 **Script / brief:** see `BRIEF.md`
 
@@ -57,7 +57,7 @@ Used by `/make-a-video` Gate 5. Generates `<project-folder>/STORYBOARD.md` â€
 ```markdown
 # STORYBOARD â€” acme-promo-15s
 
-**Total duration:** 15s Â· 30fps Â· 1920Ã—1080
+**Total duration:** 15s Â· 30fps Â· 1920ê—1080
 **Style profile:** see `assets/style-profile.md`
 
 ## Act structure
@@ -85,7 +85,7 @@ Used by `/make-a-video` Gate 5. Generates `<project-folder>/STORYBOARD.md` â€
 **Visual elements:**
 - Perspective grid floor (ambient, already on)
 - Five words, chrome gradient, Inter 96px, centered
-- Hero word "hard?" scales 1Ã— â†’ 8Ã— camera-dolly-through at 1.0â€“1.5s
+- Hero word "hard?" scales 1ê— â†’ 8ê— camera-dolly-through at 1.0â€“1.5s
 
 **Motion language:** kinetic typography, per-word stagger, final word dolly-through
 

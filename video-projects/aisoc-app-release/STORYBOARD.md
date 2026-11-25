@@ -1,6 +1,6 @@
 # AIS Mobile App Release â€” Storyboard v1
 
-**Format:** 1920Ã—1080 | 30 seconds | 30fps
+**Format:** 1920ê—1080 | 30 seconds | 30fps
 **Audio:** Music bed only (no VO for v1) â€” reused from `aisoc-hype/assets/music.mp3` (Epic Inspirational Hip-Hop, Infraction, No Copyright)
 **Built with:** Hyperframes + HTML/CSS/GSAP
 
@@ -15,7 +15,7 @@
 - Every scene has at least one localized radial glow around the focal element (contrast-first technique â€” see memory `feedback_contrast_technique.md`).
 - Grain overlay runs top-layer throughout. No flat backgrounds.
 - Kinetic-typography discipline: every headline enters via per-word stagger (0.06â€“0.1s per word), exits via transition, never `opacity: 0` set manually.
-- Motion must be visible at 30fps â€” if it looks static on the first render, crank amplitude 2Ã—.
+- Motion must be visible at 30fps â€” if it looks static on the first render, crank amplitude 2ê—.
 
 ---
 
@@ -82,7 +82,7 @@
 **Visual elements:**
 
 *Phones stage:*
-- A single stylized iPhone (360Ã—780px portrait, 48px border-radius, 12px navy bezel, drop-shadow) rotates in from 3D space: start `{ rotationY: 85, rotationX: 18, scale: 0.4, opacity: 0 }`, end `{ rotationY: 0, rotationX: 0, scale: 1, opacity: 1 }` over 2s, `expo.out`.
+- A single stylized iPhone (360ê—780px portrait, 48px border-radius, 12px navy bezel, drop-shadow) rotates in from 3D space: start `{ rotationY: 85, rotationX: 18, scale: 0.4, opacity: 0 }`, end `{ rotationY: 0, rotationX: 0, scale: 1, opacity: 1 }` over 2s, `expo.out`.
 - Phone positioned slightly right of center (x: +240px from center) to leave room for the incoming headline on the left.
 - Phone screen content (all AIS-branded):
   - Top status bar: Roboto Mono 14px `9:41 Â· AIS`
@@ -120,9 +120,9 @@
 **Concept:** Three features, three phones, one triptych. Shows the depth of the app offering.
 
 **Visual elements:**
-- Three phones in a triptych, each 280Ã—608 (smaller than Beat 3's hero phone):
+- Three phones in a triptych, each 280ê—608 (smaller than Beat 3's hero phone):
   - **Left phone** (x: -520, rotationY: +15): screen shows **Live Calls grid** â€” 4 tiles with speaker names (Nate Herk, Julien D, Anne W, Luca R), cyan "â— LIVE" pill pulsing on tile 1.
-  - **Center phone** (x: 0, rotationY: 0, scale: 1.05 â€” slightly forward): screen shows **Community Wins feed** â€” 3 stacked cards with avatar placeholders + achievement chips: "$6K/mo client Â· Marcus", "First deploy Â· Ravi", "10â†’10 automated Â· ZoÃ«".
+  - **Center phone** (x: 0, rotationY: 0, scale: 1.05 â€” slightly forward): screen shows **Community Wins feed** â€” 3 stacked cards with avatar placeholders + achievement chips: "$6K/mo client Â· Marcus", "First deploy Â· Ravi", "10â†’10 automated Â· Zoê«".
   - **Right phone** (x: +520, rotationY: -15): screen shows **Leaderboard** â€” ranked list:
     - 1. Julien D Â· $50 â† gold pill (use `--ais-warn` orange)
     - 2. Jamie K Â· $25
@@ -176,13 +176,13 @@
 **Concept:** Primary social CTA. "Follow @aiautomationsociety for updates." Instagram-styled card as phone-aspect inset on landscape canvas.
 
 **Visual elements:**
-- Scene6 host is 1920Ã—1080 AIS-branded:
+- Scene6 host is 1920ê—1080 AIS-branded:
   - Left 55% of canvas: AIS content side.
     - Headline: "FOLLOW FOR UPDATES" Montserrat 900, 100px, white, letter-spacing 0.02em. Per-word stagger in at scene start.
     - Sub-line: "@aiautomationsociety" Roboto Mono 36px, cyan.
     - Cyan accent line drawing under sub-line (SVG stroke reveal, 0.6s).
   - Right 45% of canvas: Instagram block embedded.
-- Instagram block: wrapped in a phone-aspect frame. The block is native 1080Ã—1920 â€” we include it in scene6 as a sub-composition at scale ~0.42, positioned within a decorative phone bezel (navy 12px border, 48px border-radius, cyan 200px radial glow bed behind).
+- Instagram block: wrapped in a phone-aspect frame. The block is native 1080ê—1920 â€” we include it in scene6 as a sub-composition at scale ~0.42, positioned within a decorative phone bezel (navy 12px border, 48px border-radius, cyan 200px radial glow bed behind).
 - Block customization (edit `compositions/instagram-follow.html`):
   - Display name: "AI Automation Society"
   - Handle: `@aiautomationsociety`
@@ -207,7 +207,7 @@
 - Heavy glow on logo: `drop-shadow(0 0 60px rgba(3, 7, 255, 0.75)) drop-shadow(0 0 120px rgba(55, 189, 248, 0.5))`.
 - Below logo: "COMING SOON" Montserrat 900, 92px, white, letter-spacing 0.12em. Per-word stagger in (t=27.2s, 0.1s stagger, `power4.out`).
 - Below "COMING SOON": Roboto Mono URL pill:
-  - Container: 540px Ã— 68px rounded pill, navy bg, 1px cyan border, cyan box-shadow glow.
+  - Container: 540px ê— 68px rounded pill, navy bg, 1px cyan border, cyan box-shadow glow.
   - Content: "â–¸ AIAUTOMATIONSOCIETY.AI" Roboto Mono 32px white, with a blinking cursor glyph (`|` at 1Hz).
   - Enters at t=27.8s: scale 0 â†’ 1, `back.out(1.5)`.
 - Shimmer-sweep component (inlined component markup) passes across logo+text at t=28.5s.

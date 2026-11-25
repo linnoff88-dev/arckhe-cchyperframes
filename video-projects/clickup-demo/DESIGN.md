@@ -42,4 +42,4 @@ Both fonts compile-embed automatically.
 2. **No centered "hero headline + subheadline" on every scene.** Two of those in a row = template aesthetic. Vary the composition â€” left-align one, framed still on another, corner-anchored type on a third.
 3. **No gratuitous shader transitions.** Product demos need clarity, not spectacle. Stick to push / crossfade / cARCKHÉtic zoom. Save glitch/whip-pan/ridged-burn for launch videos.
 4. **No banned fonts** (Inter, Roboto, Poppins, Syne, etc. â€” see skill's typography.md). Plus Jakarta Sans + JetBrains Mono only.
-5. **No cropped or masked product UI.** The stills are the proof â€” frame them fully inside a 1664Ã—936 window (so there's 128px of breathing room on each side at 1920Ã—1080) with a 2px border in `#2A2D37` and a soft outer shadow.
+5. **No cropped or masked product UI.** The stills are the proof â€” frame them fully inside a 1664ê—936 window (so there's 128px of breathing room on each side at 1920ê—1080) with a 2px border in `#2A2D37` and a soft outer shadow.

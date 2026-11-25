@@ -4,32 +4,32 @@ Named visual identities for HyperFrames videos. Each style is grounded in a real
 
 **How to pick:** Match mood first, content second. Ask: _"What should the viewer FEEL?"_
 
-**How to use:** Reference the style in your scene plan. Translate the style's principles into concrete composition decisions â€” palette choice, font selection, entrance patterns, transition type, ambient motion feel.
+**How to use:** Reference the style in your scene plan. Translate the style's principles into concrete composition decisions ê¢â¬â palette choice, font selection, entrance patterns, transition type, ambient motion feel.
 
 ## Quick Reference
 
 | Style           | Mood                  | Best for                           | Primary shader                    |
 | --------------- | --------------------- | ---------------------------------- | --------------------------------- |
-| Swiss Pulse     | Clinical, precise     | SaaS, data, dev tools, metrics     | CARCKHÉtic Zoom or SDF Iris        |
+| Swiss Pulse     | Clinical, precise     | SaaS, data, dev tools, metrics     | CARCKHêtic Zoom or SDF Iris        |
 | Velvet Standard | Premium, timeless     | Luxury, enterprise, keynotes       | Cross-Warp Morph                  |
 | Deconstructed   | Industrial, raw       | Tech launches, security, punk      | Glitch or Whip Pan                |
 | Maximalist Type | Loud, kinetic         | Big announcements, launches        | Ridged Burn                       |
 | Data Drift      | Futuristic, immersive | AI, ML, cutting-edge tech          | Gravitational Lens or Domain Warp |
 | Soft Signal     | Intimate, warm        | Wellness, personal stories, brand  | Thermal Distortion                |
 | Folk Frequency  | Cultural, vivid       | Consumer apps, food, communities   | Swirl Vortex or Ripple Waves      |
-| Shadow Cut      | Dark, cARCKHÉtic       | Dramatic reveals, security, exposÃ© | Domain Warp                       |
+| Shadow Cut      | Dark, cARCKHêtic       | Dramatic reveals, security, exposêÂ© | Domain Warp                       |
 
 ---
 
-## 1. Swiss Pulse â€” Josef MÃ¼ller-Brockmann
+## 1. Swiss Pulse ê¢â¬â Josef MêÂ¼ller-Brockmann
 
 **Mood:** Clinical, precise | **Best for:** SaaS dashboards, developer tools, APIs, metrics
 
-- Black (`#1a1a1a`), white, ONE accent â€” electric blue (`#0066FF`) or amber (`#FFB300`)
-- Helvetica or Inter Bold for headlines, Regular for labels. Numbers large (80â€“120px)
+- Black (`#1a1a1a`), white, ONE accent ê¢â¬â electric blue (`#0066FF`) or amber (`#FFB300`)
+- Helvetica or Inter Bold for headlines, Regular for labels. Numbers large (80ê¢â¬â120px)
 - Grid-locked compositions. Every element snaps to an invisible 12-column grid
 - Animated counters count up from 0. Hard cuts, no decorative transitions
-- Transitions: CARCKHÉtic Zoom or SDF Iris (precise, geometric)
+- Transitions: CARCKHêtic Zoom or SDF Iris (precise, geometric)
 
 **GSAP signature:** `expo.out`, `power4.out`. Entries are fast and snap into place. Nothing floats.
 
@@ -41,27 +41,27 @@ Hard cuts or geometric transitions. Nothing decorative.
 
 ---
 
-## 2. Velvet Standard â€” Massimo Vignelli
+## 2. Velvet Standard ê¢â¬â Massimo Vignelli
 
 **Mood:** Premium, timeless | **Best for:** Luxury products, enterprise software, keynotes, investor decks
 
-- Black, white, ONE rich accent â€” deep navy (`#1a237e`) or gold (`#c9a84c`)
+- Black, white, ONE rich accent ê¢â¬â deep navy (`#1a237e`) or gold (`#c9a84c`)
 - Thin sans-serif, ALL CAPS, wide letter-spacing (`0.15em+`)
 - Generous negative space. Symmetrical, centered, architectural precision
 - Slow, deliberate. Sequential reveals with long holds. No frantic motion
 - Transitions: Cross-Warp Morph (elegant, organic flow between scenes)
 
-**GSAP signature:** `sine.inOut`, `power1`. Nothing snaps â€” everything glides with intention.
+**GSAP signature:** `sine.inOut`, `power1`. Nothing snaps ê¢â¬â everything glides with intention.
 
 ```
 Velvet Standard: Black, white, one rich accent. Thin ALL CAPS type with wide tracking.
 Generous negative space. Sequential reveals, long holds.
-Cross-Warp Morph transitions. Slow and deliberate â€” luxury takes its time.
+Cross-Warp Morph transitions. Slow and deliberate ê¢â¬â luxury takes its time.
 ```
 
 ---
 
-## 3. Deconstructed â€” Neville Brody
+## 3. Deconstructed ê¢â¬â Neville Brody
 
 **Mood:** Industrial, raw | **Best for:** Tech news, developer launches, security products, punk-energy reveals
 
@@ -76,38 +76,38 @@ Cross-Warp Morph transitions. Slow and deliberate â€” luxury takes its time
 ```
 Deconstructed: Dark grey #1a1a1a + rust orange #D4501E. Type at angles, escaping frames.
 Scan-line glitch overlays. Text SLAMS and scrambles into place.
-Glitch shader transitions. Industrial and raw â€” nothing should feel polished.
+Glitch shader transitions. Industrial and raw ê¢â¬â nothing should feel polished.
 ```
 
 ---
 
-## 4. Maximalist Type â€” Paula Scher
+## 4. Maximalist Type ê¢â¬â Paula Scher
 
 **Mood:** Loud, kinetic | **Best for:** Big product launches, milestone announcements, high-energy hype videos
 
-- Bold saturated: red (`#E63946`), yellow (`#FFD60A`), black, white â€” maximum contrast
-- Text IS the visual. Overlapping type layers at different scales and angles, filling 50â€“80% of frame
-- Everything is kinetic: slamming, sliding, scaling. 2â€“3 second rapid-fire scenes
-- Text layered OVER footage â€” never empty backgrounds
+- Bold saturated: red (`#E63946`), yellow (`#FFD60A`), black, white ê¢â¬â maximum contrast
+- Text IS the visual. Overlapping type layers at different scales and angles, filling 50ê¢â¬â80% of frame
+- Everything is kinetic: slamming, sliding, scaling. 2ê¢â¬â3 second rapid-fire scenes
+- Text layered OVER footage ê¢â¬â never empty backgrounds
 - Transitions: Ridged Burn (explosive, dramatic, impossible to ignore)
 
 **GSAP signature:** `expo.out`, `back.out(1.8)`. Fast arrivals, hard stops.
 
 ```
-Maximalist Type: Red, yellow, black, white â€” max contrast. Text IS the visual.
+Maximalist Type: Red, yellow, black, white ê¢â¬â max contrast. Text IS the visual.
 Overlapping at different scales, 50-80% of frame. Everything in motion.
-Ridged Burn transitions. No static moments â€” kinetic energy throughout.
+Ridged Burn transitions. No static moments ê¢â¬â kinetic energy throughout.
 ```
 
 ---
 
-## 5. Data Drift â€” Refik Anadol
+## 5. Data Drift ê¢â¬â Refik Anadol
 
 **Mood:** Futuristic, immersive | **Best for:** AI products, ML platforms, data companies, speculative tech
 
 - Iridescent: deep black (`#0a0a0a`), electric purple (`#7c3aed`), cyan (`#06b6d4`)
-- Thin futuristic sans-serif â€” floating, weightless, minimal
-- Fluid morphing compositions. Extreme scale shifts (micro â†’ macro)
+- Thin futuristic sans-serif ê¢â¬â floating, weightless, minimal
+- Fluid morphing compositions. Extreme scale shifts (micro ê¢â â macro)
 - Particles coalesce into numbers. Light traces data paths through the frame
 - Transitions: Gravitational Lens or Domain Warp (otherworldly distortion)
 
@@ -121,7 +121,7 @@ Gravitational Lens or Domain Warp transitions. Fluid, immersive, otherworldly.
 
 ---
 
-## 6. Soft Signal â€” Stefan Sagmeister
+## 6. Soft Signal ê¢â¬â Stefan Sagmeister
 
 **Mood:** Intimate, warm | **Best for:** Wellness brands, personal stories, lifestyle products, human-centered apps
 
@@ -135,19 +135,19 @@ Gravitational Lens or Domain Warp transitions. Fluid, immersive, otherworldly.
 
 ```
 Soft Signal: Warm amber, cream, dusty rose, sage green. Humanist or handwritten type.
-Single elements fill the frame â€” intimate, never corporate.
+Single elements fill the frame ê¢â¬â intimate, never corporate.
 Slow drifts and floats throughout. Thermal Distortion transitions.
 Nothing should feel hurried or polished.
 ```
 
 ---
 
-## 7. Folk Frequency â€” Eduardo Terrazas
+## 7. Folk Frequency ê¢â¬â Eduardo Terrazas
 
 **Mood:** Cultural, vivid | **Best for:** Consumer apps, food platforms, community products, festive launches
 
 - Vivid folk: hot pink (`#FF1493`), cobalt blue (`#0047AB`), sun yellow (`#FFE000`), emerald (`#009B77`)
-- Bold warm rounded type. Pattern and repetition â€” folk art rhythm and density
+- Bold warm rounded type. Pattern and repetition ê¢â¬â folk art rhythm and density
 - Layered compositions with rich visual texture. Every frame feels handcrafted
 - Colorful motion: elements bounce, pop, and spin into place with joy
 - Transitions: Swirl Vortex or Ripple Waves (hypnotic, celebratory)
@@ -162,13 +162,13 @@ Swirl Vortex or Ripple Waves transitions. Joyful, celebratory energy.
 
 ---
 
-## 8. Shadow Cut â€” Hans Hillmann
+## 8. Shadow Cut ê¢â¬â Hans Hillmann
 
-**Mood:** Dark, cARCKHÉtic | **Best for:** Security products, dramatic reveals, investigative content, intense launches
+**Mood:** Dark, cARCKHêtic | **Best for:** Security products, dramatic reveals, investigative content, intense launches
 
 - Near-monochrome: deep blacks (`#0a0a0a`), cold greys (`#3a3a3a`), stark white + blood red (`#C1121F`) or toxic green (`#39FF14`)
 - Sharp angular text like film noir title cards. Heavy contrast, no softness
-- Heavy shadow â€” elements emerge from darkness. Reveal is the narrative
+- Heavy shadow ê¢â¬â elements emerge from darkness. Reveal is the narrative
 - Slow creeping push-ins, dramatic scale reveals, silence before the hit
 - Transitions: Domain Warp (dissolves reality itself before revealing the next scene)
 
@@ -182,7 +182,7 @@ Slow creeping push-ins. Domain Warp transitions. The reveal IS the story.
 
 ---
 
-## Mood â†’ Style Guide
+## Mood ê¢â â Style Guide
 
 | If the content feels...            | Use...          |
 | ---------------------------------- | --------------- |
@@ -193,13 +193,13 @@ Slow creeping push-ins. Domain Warp transitions. The reveal IS the story.
 | AI, ML, speculative, futuristic    | Data Drift      |
 | Human, warm, personal, wellness    | Soft Signal     |
 | Cultural, fun, consumer, festive   | Folk Frequency  |
-| Dark, dramatic, intense, cARCKHÉtic | Shadow Cut      |
+| Dark, dramatic, intense, cARCKHêtic | Shadow Cut      |
 
 ---
 
 ## Creating Custom Styles
 
-These 8 styles are examples â€” not constraints. Create your own by:
+These 8 styles are examples ê¢â¬â not constraints. Create your own by:
 
 1. **Name it** after a designer, art movement, or cultural reference
 2. **Palette**: 2-3 colors max. Declare explicit hex values
@@ -208,4 +208,4 @@ These 8 styles are examples â€” not constraints. Create your own by:
 5. **Transition**: Which shader matches the energy?
 6. **What NOT to do**: 2-3 explicit anti-patterns for this style
 
-The pattern: **named style â†’ palette â†’ typography â†’ motion rules â†’ transition â†’ avoids.**
+The pattern: **named style ê¢â â palette ê¢â â typography ê¢â â motion rules ê¢â â transition ê¢â â avoids.**

@@ -38,9 +38,9 @@ Probe: industry Â· expertise level Â· platform they'll watch on Â· what sh
 - Custom â€” ask for a number
 
 **Q4. Aspect ratio?**
-- 16:9 landscape â€” 1920Ã—1080
-- 9:16 vertical â€” 1080Ã—1920
-- 1:1 square â€” 1080Ã—1080
+- 16:9 landscape â€” 1920ê—1080
+- 9:16 vertical â€” 1080ê—1920
+- 1:1 square â€” 1080ê—1080
 
 **Q5. Frame rate?**
 - 30 fps (default, good for everything)

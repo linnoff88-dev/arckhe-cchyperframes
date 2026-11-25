@@ -5,7 +5,7 @@
 You know these rules but you violate them. Stop.
 
 - **Don't use the same ease on every tween.** You default to `power2.out` on everything. Vary eases like you vary font weights â€” no more than 2 independent tweens with the same ease in a scene.
-- **Don't use the same speed on everything.** You default to 0.4-0.5s for everything. The slowest scene should be 3Ã— slower than the fastest. Vary duration deliberately.
+- **Don't use the same speed on everything.** You default to 0.4-0.5s for everything. The slowest scene should be 3ê— slower than the fastest. Vary duration deliberately.
 - **Don't enter everything from the same direction.** You default to `y: 30, opacity: 0` on every element. Vary: from left, from right, from scale, opacity-only, letter-spacing.
 - **Don't use the same stagger on every scene.** Each scene needs its own rhythm.
 - **Don't use ambient zoom on every scene.** Pick different ambient motion per scene: slow pan, subtle rotation, scale push, color shift, or nothing. Stillness after motion is powerful.

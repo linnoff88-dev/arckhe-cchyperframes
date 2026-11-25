@@ -17,7 +17,7 @@ Save as `STORYBOARD.md` in the project directory.
 Every STORYBOARD.md starts with global settings:
 
 ```markdown
-**Format:** 1920Ã—1080
+**Format:** 1920ê—1080
 **Audio:** [TTS provider] voiceover + underscore + SFX
 **VO direction:** [voice character â€” e.g., "mid-age male, calm confident delivery,
 Apple keynote register â€” economy of words, silence between sentences is a feature"]
@@ -182,7 +182,7 @@ Here are three beats from a production storyboard showing the level of detail ex
 
 **Concept:** We're already in motion when the video starts. No title card, no fade from black. We're mid-flight over an infinite creative workspace â€” dozens of living compositions scattered below us like a city seen from a drone. Each one is alive, running a different animation. The message is clear before any words: this tool makes videos. Lots of them.
 
-**Visual:** Slow smooth diagonal drift over a vast canvas (3600Ã—2200px plane). Scattered across it: 25 composition cards at organic angles (Â±5-15Â° rotation), soft shadows, thin borders. Each card contains a DIFFERENT running animation â€” kinetic type, gradient morph, data viz, particle system, logo assembly, SVG drawing, shader noise, 3D rotating object. Depth-of-field: close cards slightly blurred, focal sweet-spot in mid-distance, far cards smaller and desaturated.
+**Visual:** Slow smooth diagonal drift over a vast canvas (3600ê—2200px plane). Scattered across it: 25 composition cards at organic angles (Â±5-15Â° rotation), soft shadows, thin borders. Each card contains a DIFFERENT running animation â€” kinetic type, gradient morph, data viz, particle system, logo assembly, SVG drawing, shader noise, 3D rotating object. Depth-of-field: close cards slightly blurred, focal sweet-spot in mid-distance, far cards smaller and desaturated.
 
 **Camera:** Diagonal drift top-left to bottom-right, slight 2-3Â° rotation over 5s. power1.inOut ease. Zoom accelerates in final second as we approach one specific card.
 

@@ -33,7 +33,7 @@ Ask one question at a time via `AskUserQuestion`, multiple-choice where possible
 1. What's this video for? (promo Â· social ad Â· launch teaser Â· product demo Â· tutorial Â· explainer Â· intro/outro card Â· other)
 2. Who's the audience? (open-ended)
 3. Target duration? (10â€“20s short Â· 20â€“45s promo Â· 45â€“90s explainer Â· 1.5â€“3 min lesson Â· custom)
-4. Aspect ratio? (16:9 1920Ã—1080 Â· 9:16 1080Ã—1920 Â· 1:1 1080Ã—1080)
+4. Aspect ratio? (16:9 1920ê—1080 Â· 9:16 1080ê—1920 Â· 1:1 1080ê—1080)
 5. Frame rate? (30 default Â· 60 for crisp UI Â· 24 cARCKHÉtic)
 6. Platform / delivery constraints? (file size Â· deadline Â· where it'll play)
 
@@ -169,7 +169,7 @@ Full boilerplate + captions pattern + ambient-bg pattern: `Read: references/comp
 - **Kinetic-type openers:** per-word stagger 0.06â€“0.10s.
 - **Captions** as body-level siblings of the root composition in `index.html`, each with `data-track-index â‰¥ 20`. Never inside scene timelines (MOTION_PHILOSOPHY Â§3.13).
 - **Catalog blocks** installed via `npx hyperframes add <name>`. Immediately **scope the block's CSS** to `[data-composition-id="..."]` â€” catalog blocks ship with `html, body { ... }` rules that bleed into the parent document when loaded as sub-compositions.
-- **Vertical + face-cam:** wrap native 1920Ã—1080 face in a transform (`translate` + `scale`) for bottom-half or full-screen mode. (If you end up here instead of `/short-form-video`, strongly consider the handoff.)
+- **Vertical + face-cam:** wrap native 1920ê—1080 face in a transform (`translate` + `scale`) for bottom-half or full-screen mode. (If you end up here instead of `/short-form-video`, strongly consider the handoff.)
 - **Apply ONLY what the user supplied.** Their palette, their fonts, their logo. Don't inject anything else. If they chose MOTION_PHILOSOPHY defaults, pull the palette + font pair from `references/style-intake.md`.
 
 ### Determinism

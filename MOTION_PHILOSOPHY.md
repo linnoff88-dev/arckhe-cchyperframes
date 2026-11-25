@@ -1,7 +1,7 @@
 # MOTION PHILOSOPHY â€” The Gold Standard
 
 > Reference deconstruction of the **Infinite â€” Global Payments** 30s spot
-> (`x-XTeSJ-DKx63uB4.mp4`, 1920Ã—1080, 30fps, 900 frames). This is what every
+> (`x-XTeSJ-DKx63uB4.mp4`, 1920ê—1080, 30fps, 900 frames). This is what every
 > Hyperframes motion-graphics build should aspire to. Re-read before starting any
 > new composition.
 
@@ -16,7 +16,7 @@
 5. **Motion blur is a feature.** Every transition uses a streak/blur trail â€” to convey energy AND to mask the cut. Hard cuts feel cheap; whip-streaks feel expensive.
 6. **Object metaphors carry meaning.** Red card = old/broken. Teal coin = new/working. The same coin returns 3 times across the piece. Visual continuity = brand.
 7. **Palette is symbolic, not decorative.** Each color owns one concept. Don't drop a color in just because it looks nice â€” assign it a meaning.
-8. **Type is a character.** Words SCALE 8Ã—, MORPH, COMPRESS, GLOW. Typography drives ~60% of the storytelling. A text-only beat can be the strongest beat.
+8. **Type is a character.** Words SCALE 8ê—, MORPH, COMPRESS, GLOW. Typography drives ~60% of the storytelling. A text-only beat can be the strongest beat.
 9. **Hold the hero shot.** Logo reveal = ~2s of stillness. Outro card = 5+ seconds. Speed earns space for stillness to land. Kinetic chaos â†’ calm = catharsis.
 10. **One unifying texture across everything.** The reference uses a faint perspective grid + crosshair (+) registration marks at intersections. Even when invisible, that grid is the spine of the whole piece.
 11. **Timelines must fill their slots.** HyperFrames hides a sub-composition the moment `timeline.duration()` is shorter than `data-duration` â†’ black frame flash. Every GSAP timeline ends with `tl.to({}, { duration: SLOT_DURATION }, 0)` as a no-op duration anchor. Non-negotiable. (Recipe in 3.8; diagnostic in Section 4.)
@@ -30,7 +30,7 @@
 | 0.0â€“0.5 | Empty stage | Black void, perspective grid floor recedes, 4 crosshair `+` markers at center, soft floor wash | Camera holds; grid hints at depth |
 | 0.5â€“1.5 | "Global payments" | Chrome-gradient type appears center, fades subtly | Word reveal #1 |
 | 1.5â€“2.0 | "are a" | Next word ghosts in while previous fades â€” overlapping reveals | Continuous read |
-| 2.0â€“3.5 | **"a pain"** | Type GROWS to fill 8Ã— â€” camera dollies through text, grid tilts sideways | Hero kinetic-type moment |
+| 2.0â€“3.5 | **"a pain"** | Type GROWS to fill 8ê— â€” camera dollies through text, grid tilts sideways | Hero kinetic-type moment |
 | 3.5â€“4.0 | **Whip transition** | Glowing white light-saber streak crosses the grid floor at speed | Hides the cut |
 | 4.0â€“5.5 | Red card lands | 3D credit card materializes on grid with motion blur, slight orbit | Object metaphor: problem |
 | 5.5â€“6.5 | **Morph** | Red card transforms into teal/cyan rounded square mid-flight, big light streak | Solution arrives |
@@ -66,7 +66,7 @@ Notice the **rule of threes** everywhere: 3 benefits, 3 surfaces, 3 product name
 
 | # | Background | Where it lives | How to build in HF |
 |---|-----------|----------------|---------------------|
-| 1 | **Perspective grid floor** | Opening, brand reveal, outro | `<div>` with `transform: perspective(800px) rotateX(60deg)` + `repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 80px)` (Ã—2 axes) + SVG `+` crosshairs as `background-image` at intersections. GSAP animates `background-position-y` for parallax. |
+| 1 | **Perspective grid floor** | Opening, brand reveal, outro | `<div>` with `transform: perspective(800px) rotateX(60deg)` + `repeating-linear-gradient(0deg, rgba(255,255,255,.06) 0 1px, transparent 1px 80px)` (ê—2 axes) + SVG `+` crosshairs as `background-image` at intersections. GSAP animates `background-position-y` for parallax. |
 | 2 | **Vignette** | Always | Absolute overlay `<div>` with `background: radial-gradient(ellipse at center, transparent 30%, black 100%)`, `pointer-events: none`. Always on top of bg, below content. |
 | 3 | **Pure black stage** | Brand reveal, between major beats | Just `body { background: #000 }`. Used as a "reset" between sections. |
 | 4 | **Horizontal speed lines** | Comet/whip moments | `repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 1px, transparent 1px 60px)` with GSAP scrolling `background-position-x` for motion blur trail |
@@ -128,7 +128,7 @@ Notice the **rule of threes** everywhere: 3 benefits, 3 surfaces, 3 product name
 
 | Move | What it does | GSAP recipe |
 |------|--------------|-------------|
-| **Camera dolly through type** | Text grows from 1Ã— to 8Ã—+, opacity fades to 0 at peak â€” feels like passing through a 3D word | `tl.fromTo(text, { scale: 1, opacity: 1 }, { scale: 8, opacity: 0, duration: 1.5, ease: 'power2.in' })` |
+| **Camera dolly through type** | Text grows from 1ê— to 8ê—+, opacity fades to 0 at peak â€” feels like passing through a 3D word | `tl.fromTo(text, { scale: 1, opacity: 1 }, { scale: 8, opacity: 0, duration: 1.5, ease: 'power2.in' })` |
 | **Light-streak whip** | Glowing whiteâ†’transparent gradient bar zips across the frame in 0.3â€“0.4s, blurred | `gsap.fromTo(streak, { xPercent: -150 }, { xPercent: 250, duration: 0.4, ease: 'power3.in' })` â€” fire AT the cut, not before |
 | **Word ghost reveal** | Word #2 starts entering while word #1 is still leaving (~0.15s overlap) | `stagger: 0.35` with each word's exit at `+= 0.5`, so they overlap by 0.15s |
 | **Object morph drift** | Object A scales down + drifts off-axis, Object B scales up from same vector â€” light streak hides the swap | Two `<div>`s, GSAP `to A: { x: 200, scale: 0.5, opacity: 0 }`, `from B: { x: -200, scale: 0.5, opacity: 0 }`, both 0.5s |
@@ -616,7 +616,7 @@ Before you ship any motion graphic, ask:
 
 - âŒ **Centered, axis-aligned, motionless text fades.** This is the lowest motion-graphics tier. Always add scale, blur, or directional energy.
 - âŒ **Hard cuts between scenes.** Every cut needs a transition element bridging it (streak, morph, wipe, shader).
-- âŒ **Flat white text on flat black background.** Use chrome gradient and halo glow â€” costs nothing, looks 10Ã— more expensive.
+- âŒ **Flat white text on flat black background.** Use chrome gradient and halo glow â€” costs nothing, looks 10ê— more expensive.
 - âŒ **6+ colors across the piece.** You're decorating, not communicating.
 - âŒ **No callbacks.** A visual element that appears once and never returns wastes a setup.
 - âŒ **Outro that ends on the last beat.** Always hold the CTA for 4+ seconds.

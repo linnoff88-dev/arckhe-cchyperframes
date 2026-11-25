@@ -4,19 +4,19 @@
 
 ---
 
-## Por que este projeto (e não `clickup-demo`)
+## Por que este projeto (e nêo `clickup-demo`)
 
-Na Trilha 3, os dois exemplos mostrados são `clickup-demo` (60s) e `linear-promo-30s` (30s). Para **aprender e modificar**, comece pelo `linear-promo-30s`. Motivos:
+Na Trilha 3, os dois exemplos mostrados sêo `clickup-demo` (60s) e `linear-promo-30s` (30s). Para **aprender e modificar**, comece pelo `linear-promo-30s`. Motivos:
 
 | | `clickup-demo` | `linear-promo-30s` |
 |---|---|---|
-| Duração | 60s | 30s |
+| Duraçêo | 60s | 30s |
 | Arquitetura | Monolito | 8 sub-composições |
 | `index.html` | 1011 linhas | 133 linhas |
 | Assets | Pesado | 4 SFX + 1 pad + 3 screenshots + 2 SVGs |
 | Como modificar | Editar 1000+ linhas | Trocar 1 sub-comp por vez |
 
-Depois que você dominar o padrão modular do linear-promo, reabra o clickup-demo com outros olhos.
+Depois que você dominar o padrêo modular do linear-promo, reabra o clickup-demo com outros olhos.
 
 ---
 
@@ -36,8 +36,8 @@ video-projects/linear-promo-30s/
 │   ├── screenshot-build.png
 │   ├── screenshot-monitor.png
 │   ├── warm-pad.mp3         ← trilha ambiente (30s)
-│   ├── sfx-whoosh-1.mp3     ← SFX transição 01→02
-│   ├── sfx-whoosh-2.mp3     ← SFX transição 02→03
+│   ├── sfx-whoosh-1.mp3     ← SFX transiçêo 01→02
+│   ├── sfx-whoosh-2.mp3     ← SFX transiçêo 02→03
 │   └── sfx-twinkle.mp3      ← SFX brand reveal
 ├── compositions/            ← 8 beats em arquivos separados
 │   ├── 01-problem-type.html     (0–4s)   kinetic type do problema
@@ -62,7 +62,7 @@ Abra `index.html` no editor. Vai ver uma estrutura muito enxuta:
      data-start="0" data-duration="30"
      data-width="1920" data-height="1080">
 
-  <!-- Cada beat é uma sub-composição carregada via data-composition-src -->
+  <!-- Cada beat é uma sub-composiçêo carregada via data-composition-src -->
   <div class="beat-layer"
     data-composition-id="01-problem-type"
     data-composition-src="compositions/01-problem-type.html"
@@ -93,18 +93,18 @@ Abra `index.html` no editor. Vai ver uma estrutura muito enxuta:
 </script>
 ```
 
-**Regras que o `index.html` respeita** (são as 11 do Render Contract):
+**Regras que o `index.html` respeita** (sêo as 11 do Render Contract):
 1. Root div tem `data-composition-id`, `data-start`, `data-duration`, `data-width`, `data-height`
-2. Cada sub-composição tem **seu próprio `data-track-index=0`** (mesma track porque são sequenciais e não se sobrepõem)
+2. Cada sub-composiçêo tem **seu próprio `data-track-index=0`** (mesma track porque sêo sequenciais e nêo se sobrepõem)
 3. Áudios em **tracks diferentes** (1, 2, 3, 4) porque tocam em paralelo
 4. Timeline GSAP pausada, registrada em `window.__timelines` com a chave idêntica ao `data-composition-id`
 5. `tl.to({}, { duration: 30 }, 0)` estende a timeline do root para os 30s completos
 
 ---
 
-## Como uma sub-composição funciona (`08-cta-outro.html`)
+## Como uma sub-composiçêo funciona (`08-cta-outro.html`)
 
-Toda sub-composição segue este shape:
+Toda sub-composiçêo segue este shape:
 
 ```html
 <template id="08-cta-outro-template">
@@ -143,7 +143,7 @@ Toda sub-composição segue este shape:
     <!-- 4. Timeline GSAP da cena, pausada -->
     <script>
       (() => {
-        const SLOT = 5; // duração da cena
+        const SLOT = 5; // duraçêo da cena
         const tl = gsap.timeline({ paused: true });
         const sel = (q) => `[data-composition-id="08-cta-outro"] ${q}`;
 
@@ -166,8 +166,8 @@ Toda sub-composição segue este shape:
 **Padrões consistentes em todas as sub-comps**:
 - Tudo dentro de `<template>` (o framework injeta na DOM no momento certo)
 - CSS usa seletor `[data-composition-id="..."] .classe` para evitar vazamento entre cenas
-- IIFE envolve o script (não polui escopo global)
-- `SLOT` local guarda a duração; `tl.to({}, { duration: SLOT }, 0)` garante timeline do tamanho certo
+- IIFE envolve o script (nêo polui escopo global)
+- `SLOT` local guarda a duraçêo; `tl.to({}, { duration: SLOT }, 0)` garante timeline do tamanho certo
 - Chave em `window.__timelines` é **exatamente** igual ao `data-composition-id` da root div
 
 ---
@@ -223,7 +223,7 @@ cp ~/caminho/para/print-3.png assets/screenshot-3.png
 
 Audio (whoosh, twinkle, warm-pad) pode manter — é royalty-free e genérico o suficiente. Se quiser trocar, use [freesound.org](https://freesound.org) ou [pixabay.com/music](https://pixabay.com/music).
 
-### 4. Atualizar copy e cores em cada sub-composição
+### 4. Atualizar copy e cores em cada sub-composiçêo
 
 **Comece pelo `08-cta-outro.html`** (outro) — é o mais simples e dá dopamina rápido ver seu logo ali.
 
@@ -235,7 +235,7 @@ Edite:
 - Cores do gradiente chrome no `.o-wordmark` CSS (linha `linear-gradient(180deg, #fff 0%, #ccc 60%, #888 100%)`)
 - Gradiente do CTA (linha `background: linear-gradient(135deg, rgba(94,106,210,0.3), rgba(169,176,240,0.2))`)
 
-Trabalhe sub-comp por sub-comp. **Uma por sessão** é ritmo bom para começar.
+Trabalhe sub-comp por sub-comp. **Uma por sessêo** é ritmo bom para começar.
 
 ### 5. Testar ao vivo no Studio
 
@@ -260,9 +260,9 @@ npx hyperframes lint
 
 Se aparecer `missing_gsap_script` em alguma sub-comp, adicione `<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>` antes do IIFE.
 
-Se aparecer sobreposição de clips, verifique que `data-track-index` está diferente para elementos que tocam ao mesmo tempo.
+Se aparecer sobreposiçêo de clips, verifique que `data-track-index` está diferente para elementos que tocam ao mesmo tempo.
 
-### 7. Render draft e verificação visual
+### 7. Render draft e verificaçêo visual
 
 ```bash
 npx hyperframes render --quality draft --output renders/draft.mp4
@@ -278,10 +278,10 @@ done
 ```
 
 Abra cada JPG e verifique:
-- Texto não está cortado
+- Texto nêo está cortado
 - Cores da marca aparecem corretas
 - Logo está legível
-- Outros elementos visuais não sumiram
+- Outros elementos visuais nêo sumiram
 
 ### 8. Render final
 
@@ -295,10 +295,10 @@ Output 1080p visualmente lossless. É o que você entrega.
 
 ## O que cada beat faz (para decidir o que trocar)
 
-| Beat | Papel narrativo | O que NA sua versão provavelmente muda |
+| Beat | Papel narrativo | O que NA sua versêo provavelmente muda |
 |---|---|---|
 | **01 — problem-type** (0–4s) | Hook: afirma problema do público | Texto (substitua "Building software..." pela dor específica do seu ICP) |
-| **02 — card-to-logo** (4–8s) | Transição visual, cria expectativa | Cor do card, formato do morph (se sua marca não usa L-bracket) |
+| **02 — card-to-logo** (4–8s) | Transiçêo visual, cria expectativa | Cor do card, formato do morph (se sua marca nêo usa L-bracket) |
 | **03 — brand-reveal** (8–10s) | Revela a marca com twinkle | Logo SVG, paleta do reveal |
 | **04 — benefits-flowchart** (10–14.8s) | Mostra 3 benefícios em flowchart | Textos dos benefícios, ícones |
 | **05 — product-surfaces** (14.8–19.5s) | 3 screenshots do produto em ângulo 3D | Screenshots (use prints reais do seu produto) |
@@ -310,34 +310,34 @@ Output 1080p visualmente lossless. É o que você entrega.
 
 ## Erros comuns e como resolver
 
-| Erro | Causa | Correção |
+| Erro | Causa | Correçêo |
 |---|---|---|
 | Lint falha em `missing_gsap_script` | Sub-comp sem `<script src="gsap...">` antes do IIFE | Adicione o script no `<template>` |
-| Sub-comp não aparece no preview | `data-composition-id` da root div não bate com chave em `window.__timelines` | Confira os dois — devem ser strings idênticas |
+| Sub-comp nêo aparece no preview | `data-composition-id` da root div nêo bate com chave em `window.__timelines` | Confira os dois — devem ser strings idênticas |
 | Vídeo trava em um frame específico | Você animou width/height direto num `<video>` | Envolva o `<video>` num `<div>` e anime o wrapper |
-| Áudio fora de sincronia | `data-start` do áudio não bate com o beat visual | Cheque timestamps nos `<audio>` do `index.html` |
+| Áudio fora de sincronia | `data-start` do áudio nêo bate com o beat visual | Cheque timestamps nos `<audio>` do `index.html` |
 | Render incompleto | Timeline GSAP mais curta que `data-duration` | Adicione `tl.to({}, { duration: SLOT }, 0)` no final do script |
 
 ---
 
 ## Próximos passos
 
-Depois de entregar sua primeira adaptação:
+Depois de entregar sua primeira adaptaçêo:
 
-1. **Variação A:** mesma estrutura de 8 beats, troque paleta completa e assets. Cliente 1.
-2. **Variação B:** altere a duração dos beats (ex: `data-start="2"` no beat 02, cortando o beat 01 em 2s). Ritmo diferente.
-3. **Variação C:** reordene os beats. Coloque o beat 08 (outro CTA) como beat 01 (hook) — tipo teaser que revela primeiro.
+1. **Variaçêo A:** mesma estrutura de 8 beats, troque paleta completa e assets. Cliente 1.
+2. **Variaçêo B:** altere a duraçêo dos beats (ex: `data-start="2"` no beat 02, cortando o beat 01 em 2s). Ritmo diferente.
+3. **Variaçêo C:** reordene os beats. Coloque o beat 08 (outro CTA) como beat 01 (hook) — tipo teaser que revela primeiro.
 4. **Avançado:** substitua um beat por um bloco do registry. Ex: `npx hyperframes add ui-3d-reveal` no lugar do beat 05.
 
 ---
 
 ## Arquivos de referência
 
-- Render contract completo: `CLAUDE.md` (seção "Render Contract")
+- Render contract completo: `CLAUDE.md` (seçêo "Render Contract")
 - Estética de motion: `MOTION_PHILOSOPHY.md` (10 Leis + checklist pré-voo)
 - Exemplo monolítico (mais avançado): `video-projects/clickup-demo/index.html`
 - Outro exemplo modular: `video-projects/may-shorts-19/` (short-form vertical 9:16)
 
 ---
 
-*Documento criado em 2026-04-19. Se encontrar inconsistência, verifique se o projeto não mudou desde então.*
+*Documento criado em 2026-04-19. Se encontrar inconsistência, verifique se o projeto nêo mudou desde entêo.*
